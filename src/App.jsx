@@ -4,6 +4,7 @@ import Products from './products/Products'
 import Carts from './carts/Carts'
 import Users from './users/Users'
 import Auth from './auth/Auth'
+import Modalproducts from './components/Modalproducts'
 import ProductDetail from './pages/ProductDetail'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/carts" element={< Carts />} />
         <Route path="/users" element={<Users/>} />
         <Route path="/auth" element={<Auth/>} />
+        <Route path="/modalproducts" element={<Modalproducts/>} />
         <Route path="/product-detail/:id" element={<ProductDetail/>} />
        </Routes>
       </BrowserRouter>
