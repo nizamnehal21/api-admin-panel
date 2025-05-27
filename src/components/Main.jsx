@@ -54,7 +54,7 @@ const Main = () => {
                   category: category || 'misc',
                   rating: {
                     rate: parseFloat(rating),
-                    count: 1 // Optional count value
+                    count: 1 
                   }
                 };
 
@@ -68,13 +68,13 @@ const Main = () => {
                   });
 
                   const data = await res.json();
-                  data.rating = { rate: parseFloat(rating), count: 1 }; // 
-                  data.category = category || 'misc'; // 
-                  data.image = image || ''; // ⬅️ Add this line
+                  data.rating = { rate: parseFloat(rating), count: 1 }; 
+                  data.category = category || 'misc'; 
+                  data.image = image || ''; 
 
                   console.log('Product added:', data);
                   alert('Product added successfully!');
-                  setProducts([data, ...products]); // Update UI with new product
+                  setProducts([data, ...products]); 
                   setShowModal(false);
 
                   setTitle('');
